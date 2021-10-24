@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        android:title="Enable Night Mode">
+        <CheckBoxPreference
+            android:title="Night Mode"
+            android:key="NIGHT"
+            android:defaultValue="false"
+            android:summaryOn="Night mode is activated"
+            android:summaryOff="Night Mode is deactivated"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Screen orientation">
+        <ListPreference
+            android:title="Orientation"
+            android:key="ORIENTATION"
+            android:entries="@array/items_name"
+            android:entryValues="@array/items_value"
+            android:defaultValue="false"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Font size">
+        <ListPreference
+            android:title="Font Size"
+            android:key="FONT_SIZE"
+            android:entries="@array/font_size_names"
+            android:entryValues="@array/font_size_values"
+            android:defaultValue="false"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Enable Night Mode">
+        <CheckBoxPreference
+            android:title="Show Local News"
+            android:key="SHOW_LOCAL_NEWS"
+            android:defaultValue="true"
+            android:summaryOn="Shown"
+            android:summaryOff="Not Shown"
+            />
+        <CheckBoxPreference
+            android:title="Show Sports News"
+            android:key="SHOW_SPORTS_NEWS"
+            android:defaultValue="true"
+            android:summaryOn="Shown"
+            android:summaryOff="Not Shown"
+            />
+        <CheckBoxPreference
+            android:title="Show Travel News"
+            android:key="SHOW_TRAVEL_NEWS"
+            android:defaultValue="true"
+            android:summaryOn="Shown"
+            android:summaryOff="Not Shown"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>
